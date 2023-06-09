@@ -1,0 +1,24 @@
+---
+title: "Economic Connectdness"
+author: "Daniel Cho"
+format: html
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+library(tidyverse)
+library(primer.data)
+
+connectedness |> ggplot(aes(x = population, y = connectedness)) +
+  geom_point(alpha = 0.5, color = "blue") + 
+  scale_x_log10(labels = scales::comma) +
+  labs(title = "US County Population vs Economic Connectedness",
+       subtitle = "Population size does not matter to EC",
+       x = "Population",
+       y = "Connectedness",
+       caption = "Opportunity Insights")
+```
+
