@@ -1,0 +1,15 @@
+COPYING
+Info.plist
+R
+Rscript
+SVN-REVISION
+bin
+doc
+etc
+fontconfig
+include
+lib
+library
+modules
+share
+tests
